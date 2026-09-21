@@ -1,0 +1,108 @@
+:root {
+  /* African Digital Premium Palette - Dark Mode (Default) */
+  --bg-primary: #070A0F;
+  --bg-surface: #0D1117;
+  --bg-surface-elevated: #121821;
+  --bg-surface-hover: #1A2230;
+  --bg-surface-glass: rgba(13, 17, 23, 0.75);
+
+  --border-subtle: rgba(255, 255, 255, 0.07);
+  --border-focus: rgba(34, 197, 94, 0.4);
+  --border-card: rgba(255, 255, 255, 0.08);
+
+  --text-primary: #F5F7FA;
+  --text-secondary: #98A2B3;
+  --text-muted: #667085;
+  --text-inverse: #070A0F;
+
+  /* Accents */
+  --accent-primary: #22C55E;
+  --accent-primary-hover: #16A34A;
+  --accent-primary-glow: rgba(34, 197, 94, 0.18);
+  --accent-primary-subtle: rgba(34, 197, 94, 0.1);
+
+  --accent-secondary: #38BDF8;
+  --accent-secondary-hover: #0284C7;
+  --accent-secondary-glow: rgba(56, 189, 248, 0.16);
+  --accent-secondary-subtle: rgba(56, 189, 248, 0.1);
+
+  /* Status Colors */
+  --status-wip-bg: rgba(245, 158, 11, 0.12);
+  --status-wip-border: rgba(245, 158, 11, 0.35);
+  --status-wip-text: #FBBF24;
+
+  --status-done-bg: rgba(34, 197, 94, 0.12);
+  --status-done-border: rgba(34, 197, 94, 0.35);
+  --status-done-text: #4ADE80;
+
+  /* Typography */
+  --font-heading: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+
+  /* Spacing */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+  --spacing-3xl: 5rem;
+  --spacing-4xl: 7.5rem;
+
+  /* Radius */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 26px;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 14px 0 rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 10px 30px -5px rgba(0, 0, 0, 0.45);
+  --shadow-accent-glow: 0 0 14px rgba(34, 197, 94, 0.12);
+  --shadow-cyan-glow: 0 0 14px rgba(56, 189, 248, 0.1);
+
+  /* Layout */
+  --max-width-container: 1240px;
+  --navbar-height: 72px;
+
+  /* Transitions */
+  --transition-fast: 150ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-normal: 250ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-smooth: 400ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Light Mode support (designed with clean contrast) */
+[data-theme="light"] {
+  --bg-primary: #F8FAFC;
+  --bg-surface: #FFFFFF;
+  --bg-surface-elevated: #F1F5F9;
+  --bg-surface-hover: #E2E8F0;
+  --bg-surface-glass: rgba(255, 255, 255, 0.85);
+
+  --border-subtle: rgba(15, 23, 42, 0.08);
+  --border-focus: rgba(34, 197, 94, 0.5);
+  --border-card: rgba(15, 23, 42, 0.06);
+
+  --text-primary: #0F172A;
+  --text-secondary: #475569;
+  --text-muted: #64748B;
+  --text-inverse: #FFFFFF;
+
+  --accent-primary: #15803D;
+  --accent-primary-hover: #166534;
+  --accent-primary-glow: rgba(22, 163, 74, 0.15);
+  --accent-primary-subtle: rgba(22, 163, 74, 0.08);
+
+  --accent-secondary: #0284C7;
+  --accent-secondary-hover: #0369A1;
+  --accent-secondary-glow: rgba(2, 132, 199, 0.14);
+  --accent-secondary-subtle: rgba(2, 132, 199, 0.08);
+
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.07);
+  --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.09);
+  --shadow-accent-glow: 0 4px 20px rgba(22, 163, 74, 0.12);
+  --shadow-cyan-glow: 0 4px 20px rgba(2, 132, 199, 0.12);
+}
