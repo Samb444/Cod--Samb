@@ -180,7 +180,7 @@ export const Hero: React.FC = () => {
               </div>
               <div className="card-info">
                 <span className="card-primary-text">Développement Web</span>
-                <span className="card-secondary-text">Applications & Projets réels</span>
+                <span className="card-secondary-text">Applications & Projets concrets</span>
               </div>
             </div>
           </div>

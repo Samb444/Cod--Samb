@@ -1,6 +1,8 @@
 import React from 'react';
 import { Navbar } from './components/layout/Navbar';
 import { Hero } from './components/hero/Hero';
+import { About } from './components/about/About';
+import { Skills } from './components/skills/Skills';
 import './App.css';
 
 const App: React.FC = () => {
@@ -15,6 +17,8 @@ const App: React.FC = () => {
       {/* Main Content */}
       <main id="main-content">
         <Hero />
+        <About />
+        <Skills />
       </main>
     </div>
   );

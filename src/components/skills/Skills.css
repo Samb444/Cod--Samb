@@ -1,0 +1,329 @@
+/* ==========================================================================
+   SKILLS COMPONENT STYLES
+   ========================================================================== */
+
+.skills-section {
+  position: relative;
+  border-top: 1px solid var(--border-subtle);
+  background: radial-gradient(
+    circle at 50% 0%,
+    rgba(34, 197, 94, 0.02) 0%,
+    transparent 50%
+  );
+}
+
+/* --------------------------------------------------------------------------
+   Section Header
+   -------------------------------------------------------------------------- */
+.skills-header {
+  max-width: 800px;
+  margin-bottom: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.skills-title {
+  font-size: clamp(2rem, 3.5vw, 2.85rem);
+  font-weight: 800;
+  line-height: 1.2;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+}
+
+.skills-lead {
+  font-size: 1.1rem;
+  line-height: 1.65;
+  color: var(--text-secondary);
+}
+
+.skills-clarification-banner {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.65rem 1rem;
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.4;
+  margin-top: 0.5rem;
+  width: fit-content;
+}
+
+.clarification-icon {
+  color: var(--accent-primary);
+  flex-shrink: 0;
+}
+
+/* --------------------------------------------------------------------------
+   Skills Asymmetric Grid Composition
+   -------------------------------------------------------------------------- */
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.75rem;
+}
+
+@media (min-width: 900px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .skill-group-card.group-management-office {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (min-width: 1024px) {
+  .skill-group-card.group-management-office .tech-chips-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Cards Base */
+.skill-group-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-xl);
+  padding: 2.2rem;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 1.35rem;
+  position: relative;
+  transition: border-color var(--transition-fast), transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.skill-group-card:hover {
+  border-color: rgba(255, 255, 255, 0.16);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+[data-theme="light"] .skill-group-card:hover {
+  border-color: rgba(0, 0, 0, 0.14);
+}
+
+/* Card Top Bar */
+.skill-card-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.15rem;
+}
+
+.group-icon-badge {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md);
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border-card);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-primary);
+  flex-shrink: 0;
+  transition: all var(--transition-fast);
+}
+
+.group-backend-api .group-icon-badge,
+.group-databases .group-icon-badge {
+  color: var(--accent-secondary);
+}
+
+.skill-group-card:hover .group-icon-badge {
+  transform: scale(1.04);
+  border-color: var(--border-focus);
+}
+
+.group-title-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.group-category-badge {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent-secondary);
+}
+
+.group-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.25;
+}
+
+.group-subtitle {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+/* Group Description */
+.group-desc {
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+/* Chips List */
+.tech-chips-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+}
+
+@media (min-width: 500px) {
+  .tech-chips-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Single Tech Chip */
+.tech-chip {
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 0.85rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  transition: all var(--transition-fast);
+}
+
+.tech-chip:hover {
+  border-color: var(--border-focus);
+  background: var(--bg-surface-hover);
+  transform: translateY(-2px);
+}
+
+.tech-chip-header {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.tech-chip-icon {
+  color: var(--accent-primary);
+  flex-shrink: 0;
+}
+
+.group-backend-api .tech-chip-icon,
+.group-databases .tech-chip-icon {
+  color: var(--accent-secondary);
+}
+
+.tech-chip-name {
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.tech-chip-role {
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  line-height: 1.35;
+}
+
+.tech-chip-tag {
+  display: inline-block;
+  width: fit-content;
+  font-size: 0.68rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0.15rem 0.45rem;
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text-muted);
+  border: 1px solid var(--border-subtle);
+}
+
+[data-theme="light"] .tech-chip-tag {
+  background: rgba(0, 0, 0, 0.04);
+}
+
+/* Distinct Note (e.g. Prisma ORM vs PostgreSQL) */
+.group-specific-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.55rem;
+  font-size: 0.8rem;
+  color: var(--accent-secondary);
+  background: var(--accent-secondary-subtle);
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  padding: 0.65rem 0.9rem;
+  border-radius: var(--radius-md);
+  line-height: 1.45;
+  margin-top: auto;
+}
+
+[data-theme="light"] .group-specific-note {
+  color: #0369a1;
+  background: #f0f9ff;
+  border-color: rgba(2, 132, 199, 0.25);
+}
+
+.group-specific-note svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* --------------------------------------------------------------------------
+   Skills Footer Philosophy Banner
+   -------------------------------------------------------------------------- */
+.skills-footer-note {
+  margin-top: 3.5rem;
+  padding: 1.6rem 2rem;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-note-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.footer-note-title {
+  font-family: var(--font-heading);
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--accent-primary);
+}
+
+.footer-note-text {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+  margin: 0;
+}
+
+/* --------------------------------------------------------------------------
+   Responsive Adjustments
+   -------------------------------------------------------------------------- */
+@media (max-width: 640px) {
+  .skill-group-card {
+    padding: 1.4rem;
+  }
+
+  .skills-footer-note {
+    padding: 1.25rem;
+  }
+
+  .skills-clarification-banner {
+    width: 100%;
+  }
+}
