@@ -6,6 +6,7 @@ import { Skills } from './components/skills/Skills';
 import { Projects } from './components/projects/Projects';
 import { Certifications } from './components/certifications/Certifications';
 import { Hackathons } from './components/hackathons/Hackathons';
+import { CV } from './components/cv/CV';
 import './App.css';
 
 const App: React.FC = () => {
@@ -25,6 +26,7 @@ const App: React.FC = () => {
         <Projects />
         <Certifications />
         <Hackathons />
+        <CV />
       </main>
     </div>
   );
