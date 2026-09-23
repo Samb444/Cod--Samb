@@ -11,12 +11,20 @@ export interface Project {
   longDescription?: string;
   objective?: string;
   role?: string;
-  technologies: string[];
-  image: string;
+  context?: string;
+  technologies?: string[];
+  image?: string;
   demoUrl?: string;
   githubUrl?: string;
   featured?: boolean;
   notes?: string;
+  technicalNote?: string;
+  features?: string[];
+  visualColors?: {
+    primary: string;
+    secondary?: string;
+    bg?: string;
+  };
 }
 
 export interface EducationItem {
