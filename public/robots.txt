@@ -1,3 +1,5 @@
 # robots.txt — Codé Samb Portfolio
 User-agent: *
 Allow: /
+
+Sitemap: https://codesamb.vercel.app/sitemap.xml
