@@ -139,7 +139,8 @@ export const CertificateModal: React.FC<CertificateModalProps> = ({
               src={imageSrc}
               alt={`Document officiel : ${title}`}
               className="cert-modal-image"
-              loading="lazy"
+              loading="eager"
+              decoding="async"
             />
           </div>
         </div>

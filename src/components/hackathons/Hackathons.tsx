@@ -136,6 +136,7 @@ export const Hackathons: React.FC = () => {
                     alt={`Attestation officielle de participation et distinction au Hackathon CEZAT 2026 décernée à Codé Samb (2e position)`}
                     className="hackathon-document-img"
                     loading="lazy"
+                    decoding="async"
                   />
                   <div className="hackathon-preview-overlay">
                     <span className="hackathon-overlay-prompt">

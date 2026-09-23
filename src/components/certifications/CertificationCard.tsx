@@ -32,6 +32,7 @@ export const CertificationCard: React.FC<CertificationCardProps> = ({
           alt={`Attestation officielle de réussite en ${certification.title} délivrée à Codé Samb par le programme FORCE-N`}
           className="cert-card-image"
           loading="lazy"
+          decoding="async"
         />
         <div className="cert-preview-overlay">
           <span className="cert-preview-action">

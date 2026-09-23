@@ -17,6 +17,11 @@ const App: React.FC = () => {
       {/* Dynamic Background Ambient Light & Network Grid */}
       <div className="bg-ambient-layer" aria-hidden="true" />
 
+      {/* Accessibility: Skip to Content Link */}
+      <a href="#main-content" className="skip-to-content">
+        Aller au contenu principal
+      </a>
+
       {/* Premium Navigation */}
       <Navbar />
 
