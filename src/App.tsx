@@ -7,6 +7,8 @@ import { Projects } from './components/projects/Projects';
 import { Certifications } from './components/certifications/Certifications';
 import { Hackathons } from './components/hackathons/Hackathons';
 import { CV } from './components/cv/CV';
+import { Contact } from './components/contact/Contact';
+import { Footer } from './components/layout/Footer';
 import './App.css';
 
 const App: React.FC = () => {
@@ -27,7 +29,11 @@ const App: React.FC = () => {
         <Certifications />
         <Hackathons />
         <CV />
+        <Contact />
       </main>
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 };

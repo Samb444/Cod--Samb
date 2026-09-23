@@ -1,0 +1,162 @@
+/* ==========================================================================
+   FOOTER — MINIMALIST EDITORIAL AFRICAN DIGITAL PREMIUM
+   ========================================================================== */
+
+.footer-root {
+  background: var(--bg-surface);
+  border-top: 1px solid var(--border-subtle);
+  padding-top: var(--spacing-2xl);
+  padding-bottom: var(--spacing-2xl);
+  position: relative;
+  z-index: 1;
+}
+
+.footer-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .footer-inner {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.footer-brand-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  text-decoration: none;
+  width: fit-content;
+}
+
+.footer-brand .brand-monogram {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: var(--radius-sm);
+  background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
+  color: #051A0E;
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 0.75rem;
+  letter-spacing: -0.02em;
+}
+
+.footer-brand .brand-name {
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  color: var(--text-primary);
+}
+
+.footer-tagline {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.footer-location {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  font-family: var(--font-heading);
+  font-weight: 500;
+}
+
+.footer-links-col {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  align-items: flex-start;
+}
+
+@media (min-width: 768px) {
+  .footer-links-col {
+    align-items: flex-end;
+  }
+}
+
+.footer-nav {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.footer-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+
+.footer-link:hover {
+  color: var(--text-primary);
+}
+
+.footer-link:hover .footer-arrow {
+  color: var(--accent-secondary);
+  transform: translate(2px, -2px);
+}
+
+.footer-arrow {
+  color: var(--text-muted);
+  transition: all var(--transition-fast);
+}
+
+.footer-link:focus-visible,
+.footer-back-to-top:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--border-focus);
+  border-radius: var(--radius-sm);
+}
+
+.footer-back-to-top {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 0.4rem 0.85rem;
+  color: var(--text-secondary);
+  font-family: var(--font-heading);
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.footer-back-to-top:hover {
+  background: var(--bg-surface-hover);
+  color: var(--text-primary);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Light mode adjustments */
+[data-theme="light"] .footer-root {
+  background: var(--bg-surface);
+  border-top-color: var(--border-subtle);
+}
+
+[data-theme="light"] .footer-back-to-top:hover {
+  border-color: rgba(15, 23, 42, 0.15);
+}
