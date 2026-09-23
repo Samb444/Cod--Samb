@@ -57,6 +57,7 @@ export interface Certification {
   issuer: string;
   period: string;
   image: string;
+  partner?: string;
   credentialUrl?: string;
   description?: string;
 }
@@ -68,7 +69,8 @@ export interface HackathonAward {
   year: string;
   result: string;
   rankBadge: string;
-  description: string;
+  description?: string;
   image: string;
-  skillsUsed: string[];
+  organizers?: string[];
+  skillsUsed?: string[];
 }
