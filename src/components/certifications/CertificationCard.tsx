@@ -29,7 +29,7 @@ export const CertificationCard: React.FC<CertificationCardProps> = ({
       >
         <img
           src={certification.image}
-          alt={`Attestation officielle de réussite en ${certification.title} délivrée à Codé Samb par le programme FORCE-N`}
+          alt={certification.alt || `Attestation officielle de réussite en ${certification.title} délivrée à Codé Samb par ${certification.issuer}`}
           className="cert-card-image"
           loading="lazy"
           decoding="async"
@@ -44,7 +44,7 @@ export const CertificationCard: React.FC<CertificationCardProps> = ({
         <div className="cert-card-badge-layer">
           <span className="cert-verified-pill">
             <ShieldCheck size={13} aria-hidden="true" />
-            <span>FORCE-N</span>
+            <span>{certification.badge || certification.issuer}</span>
           </span>
         </div>
       </div>

@@ -33,14 +33,14 @@ export const Certifications: React.FC = () => {
           </h2>
 
           <p className="certifications-lead text-lead">
-            Des attestations officielles obtenues dans le cadre de programmes rigoureux, validant l'acquisition de compétences en informatique fondamentale, commerce électronique et marketing numérique.
+            Des attestations officielles obtenues dans le cadre de programmes rigoureux, validant l'acquisition de compétences en informatique fondamentale, commerce électronique, marketing numérique et gestion des réseaux sociaux.
           </p>
 
           {/* Factual Notice Banner */}
           <div className="certifications-notice-banner">
             <ShieldCheck size={16} className="notice-icon" aria-hidden="true" />
             <span>
-              <strong>Authenticité garantie :</strong> Justificatifs originaux délivrés par le programme FORCE-N en partenariat avec l'Université numérique Cheikh Hamidou Kane et la Fondation Mastercard. Chaque document dispose d'un QR code de vérification officiel.
+              <strong>Authenticité garantie :</strong> Justificatifs originaux délivrés par les organismes officiels partenaires (FORCE-N / Université numérique Cheikh Hamidou Kane, Orange Digital Center / Sonatel). Documents vérifiables et authentiques.
             </span>
           </div>
         </div>
@@ -61,9 +61,9 @@ export const Certifications: React.FC = () => {
           isOpen={selectedCert !== null}
           onClose={handleCloseModal}
           title={selectedCert ? selectedCert.title : ''}
-          subtitle={selectedCert ? `${selectedCert.issuer} · ${selectedCert.partner}` : undefined}
+          subtitle={selectedCert ? (selectedCert.partner ? `${selectedCert.issuer} · ${selectedCert.partner}` : selectedCert.issuer) : undefined}
           imageSrc={selectedCert ? selectedCert.image : ''}
-          badge="Attestation de Réussite"
+          badge={selectedCert?.type || "Attestation officielle"}
           date={selectedCert?.period}
         />
 

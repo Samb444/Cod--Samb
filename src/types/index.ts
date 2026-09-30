@@ -60,6 +60,9 @@ export interface Certification {
   partner?: string;
   credentialUrl?: string;
   description?: string;
+  badge?: string;
+  type?: string;
+  alt?: string;
 }
 
 export interface HackathonAward {

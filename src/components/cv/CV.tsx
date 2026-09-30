@@ -295,11 +295,12 @@ export const CV: React.FC = () => {
 
                         {/* Section: Certifications */}
                         <div className="cv-sheet-section">
-                          <span className="cv-sheet-sec-title">CERTIFICATS FORCE-N</span>
+                          <span className="cv-sheet-sec-title">CERTIFICATIONS & ATTESTATIONS</span>
                           <ul className="cv-sheet-tags-list">
                             <li>Internet et Informatique</li>
                             <li>Commerce digital</li>
                             <li>Marketing digital</li>
+                            <li>Social Media Management</li>
                           </ul>
                         </div>
 

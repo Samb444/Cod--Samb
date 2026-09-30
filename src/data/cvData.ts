@@ -52,8 +52,8 @@ export const CV_PILLARS: CVPillar[] = [
   {
     id: 'certifications',
     title: 'Certifications officielles vérifiées',
-    subtitle: 'Programme FORCE-N · UN-CHK · Mastercard Foundation',
-    details: 'Attestations officielles avec QR code en Internet & Informatique, Marketing digital et Commerce électronique.',
+    subtitle: 'FORCE-N (UN-CHK) · Orange Digital Center (Tech-Ki)',
+    details: 'Attestations officielles vérifiées en Internet & Informatique, Marketing digital, Commerce électronique et Social Media Management.',
     tag: 'Certifié'
   },
   {
